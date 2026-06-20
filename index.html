@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vincent Calica | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="hero">
+      <div class="badge">Available for Web, Automation & AI Systems</div>
+      <h1>Vincent Calica</h1>
+      <p id="typing"></p>
+
+      <div class="buttons">
+        <button class="primary button-link" id="openProjects" type="button">View Project Index</button>
+        <a href="#contact" class="secondary">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#automation">Automation</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="fade">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-box">
+      <p>
+        I am an Information Technology graduate with a background in full-stack web development.
+        I build clean websites, manage systems, and design automation workflows using modern tools
+        such as APIs, Webhooks, Pabbly Connect, Relevance AI, and CRM platforms like Pipedrive.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="fade">
+    <h2 class="section-title">Core Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <span>💻</span>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, PHP, MySQL, responsive design, and full-stack website development.</p>
+      </div>
+
+      <div class="card">
+        <span>⚙️</span>
+        <h3>Automation</h3>
+        <p>Pabbly Connect workflows, triggers, actions, filters, routers, and system integrations.</p>
+      </div>
+
+      <div class="card">
+        <span>🔗</span>
+        <h3>APIs & Webhooks</h3>
+        <p>JSON, API requests, webhook payloads, POST requests, and application communication.</p>
+      </div>
+
+      <div class="card">
+        <span>🤖</span>
+        <h3>AI Agents</h3>
+        <p>Relevance AI agents for lead qualification, summaries, task automation, and decision support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="automation" class="fade">
+    <h2 class="section-title">Automation Workflow</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>1. Lead Capture</h3>
+        <p>Customer submits a website form or WhatsApp inquiry.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>2. Webhook Trigger</h3>
+        <p>The system sends customer data automatically to Pabbly Connect.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>3. AI Processing</h3>
+        <p>Relevance AI analyzes the lead, scores priority, and recommends next action.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>4. CRM Update</h3>
+        <p>Pipedrive stores the lead, updates the sales pipeline, and notifies the team.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="fade">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="grid">
+      <button class="card project-card" type="button" data-project-id="portfolio">
+        <span>🌐</span>
+        <h3>Modern Portfolio Website</h3>
+        <p>A responsive personal website designed to showcase web development and automation skills.</p>
+      </button>
+
+      <button class="card project-card" type="button" data-project-id="lead-automation">
+        <span>📩</span>
+        <h3>Lead Automation System</h3>
+        <p>Website form connected to webhook, Pabbly, AI lead scoring, and Pipedrive CRM.</p>
+      </button>
+
+      <button class="card project-card" type="button" data-project-id="crm-pipeline">
+        <span>📊</span>
+        <h3>CRM Pipeline Setup</h3>
+        <p>Lead stages, sales activities, customer records, and automated follow-up tracking.</p>
+      </button>
+    </div>
+  </section>
+
+  <section id="contact" class="fade">
+    <div class="contact-box">
+      <h2>Let's Build Something Smart</h2>
+      <p>Email: Vincentdoctolerocalica@gmail.com</p>
+      <p>Location: Dubai, UAE</p>
+      <br>
+      <a href="mailto:Vincentdoctolerocalica@gmail.com" class="badge">Send Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Vincent Doctolero Calica. All Rights Reserved.</p>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button class="modal-close" type="button" aria-label="Close project index" data-close-modal>×</button>
+      <div class="modal-heading">
+        <span class="badge">Project Index</span>
+        <h2 id="projectModalTitle">Featured Project Sites</h2>
+        <p>Choose a project below. Each item opens the project link or live site in a new tab.</p>
+      </div>
+      <div class="project-list" id="projectList"></div>
+    </div>
+  </div>
+
+  <button id="topBtn">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
